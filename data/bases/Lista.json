@@ -1,0 +1,30 @@
+{
+  "name": "Mi TV Personal",
+  "icon": "https://tvlibree.com/wp-content/uploads/2022/09/cropped-logo-tvlibree-1.png",
+  "items": [
+    {
+      "title": "Walter channel",
+      "type": "link",
+      "url": "https://tvlibree.com/html/fl/?get=V2FybmVySEQ=",
+      "image": "https://via.placeholder.com/300x200?text=Canal+1",
+      "properties": {
+        "display": "fullscreen",
+        "key_back_button": "msx:back",
+        "interaction": "native",
+        "execute": "var cleaner = setInterval(function(){ var ads = document.querySelectorAll('[class*=\"pop\"], [id*=\"pop\"], [class*=\"ads\"]'); ads.forEach(el => el.remove()); var jwp = document.querySelector('.jwplayer'); if(jwp){ jwp.focus(); jwp.scrollIntoView(); clearInterval(cleaner); } }, 1000);"
+      }
+    },
+    {
+      "title": "Canal 2 (Ejemplo)",
+      "type": "link",
+      "url": "https://tvlibree.com/canal-2-ejemplo/",
+      "image": "https://via.placeholder.com/300x200?text=Canal+2",
+      "properties": {
+        "display": "fullscreen",
+        "key_back_button": "msx:back",
+        "interaction": "native",
+        "execute": "var cleaner = setInterval(function(){ var ads = document.querySelectorAll('[class*=\"pop\"], [id*=\"pop\"], [class*=\"ads\"]'); ads.forEach(el => el.remove()); var jwp = document.querySelector('.jwplayer'); if(jwp){ jwp.focus(); jwp.scrollIntoView(); clearInterval(clear); } }, 1000);"
+      }
+    }
+  ]
+}

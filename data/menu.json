@@ -19,7 +19,7 @@
         {
             "icon": "#bd0003:live-tv",
             "label": "TVGO",
-            "data": "user:http://msx.benzac.de/services/m3u.php?type=video&mode=extended&background=http://msx.benzac.de/media/wallpaper1.jpg&url=https://dl.dropbox.com/scl/fi/39hpnlcq01xt7w7ufphnr/TVGO.m3u?rlkey=ojmofoacja8tkx8eongtgk52m&dl=0"
+            "data": "user:http://msx.benzac.de/services/m3u.php?type=video&mode=extended&background=http://msx.benzac.de/media/wallpaper1.jpg&url=https://dl.dropbox.com/scl/fi/39hpnlcq01xt7w7ufphnr/TVGO.m3u8?rlkey=ojmofoacja8tkx8eongtgk52m&st=n8xhgv2g&dl=0"
         },
         {
             "icon": "image",

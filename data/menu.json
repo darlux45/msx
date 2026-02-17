@@ -24,7 +24,8 @@
         {
             "icon": "image",
             "label": "Images",
-            "data": "https://darlux45.github.io/msx/data/base/Lista.json"
+            "type": "lista",
+            "data": "https://raw.githubusercontent.com/darlux45/msx/refs/heads/main/data/bases/Lista.json"
         },
         {
             "icon": "#18aa9c:smart-display",

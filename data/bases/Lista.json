@@ -11,7 +11,7 @@
         "display": "fullscreen",
         "key_back_button": "msx:back",
         "interaction": "native",
-        "execute": "var cleaner = setInterval(function(){ var ads = document.querySelectorAll('[class*=\"pop\"], [id*=\"pop\"], [class*=\"ads\"]'); ads.forEach(el => el.remove()); var jwp = document.querySelector('.jwplayer'); if(jwp){ jwp.focus(); jwp.scrollIntoView(); clearInterval(cleaner); } }, 1000);"
+        "execute": "var cleaner = setInterval(function(){ var ads = document.querySelectorAll('[class*=\"pop\"], [id*=\"pop\"], [class*=\"ads\"]'); ads.forEach(el => el.remove()); var jwp = document.querySelector('.jwplayer'); if(jwp && window.jwplayer){ var player = jwplayer(); /* Forzar Play/Pause con el OK del control */ window.onkeydown = function(e) { if(e.keyCode == 13 || e.keyCode == 179) { player.getState() == 'playing' ? player.pause() : player.play(); } }; jwp.focus(); clearInterval(cleaner); } }, 1000);"
       }
     },
     {
@@ -23,7 +23,7 @@
         "display": "fullscreen",
         "key_back_button": "msx:back",
         "interaction": "native",
-        "execute": "var cleaner = setInterval(function(){ var ads = document.querySelectorAll('[class*=\"pop\"], [id*=\"pop\"], [class*=\"ads\"]'); ads.forEach(el => el.remove()); var jwp = document.querySelector('.jwplayer'); if(jwp){ jwp.focus(); jwp.scrollIntoView(); clearInterval(clear); } }, 1000);"
+        "execute": "var cleaner = setInterval(function(){ var ads = document.querySelectorAll('[class*=\"pop\"], [id*=\"pop\"], [class*=\"ads\"]'); ads.forEach(el => el.remove()); var jwp = document.querySelector('.jwplayer'); if(jwp && window.jwplayer){ var player = jwplayer(); window.onkeydown = function(e) { if(e.keyCode == 13 || e.keyCode == 179) { player.getState() == 'playing' ? player.pause() : player.play(); } }; jwp.focus(); clearInterval(cleaner); } }, 1000);"
       }
     }
   ]
